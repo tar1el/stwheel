@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>stwheel.ru</title>
+	<!-- Подключенные файлы -->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="slider.css">
+	<link rel="stylesheet" href="search.css">
+	<link rel="stylesheet" href="filter.css">
+	<link rel="stylesheet" href="arrow.css">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	
+</head>
+<body>
+	<!-- Шапка сайта(начало) -->
+	<div class="header">
+	<img class="logo" src="img/stwheel.png" width="80px" height="80px">
+		
+		<!-- Навигационное меню -->
+		<div id="menu">
+			<a href="index.html" id="main">ГЛАВНОЕ</a>
+			<a href="company.html" id="about-us">О НАС</a>
+			<a href="help.html" id="help">ПОМОЩЬ КОНУСЛЬТАНАТА</a>
+			<a href="order.html" id="order">ЗАКАЗАТЬ</a>
+		</div>
+	<h1>STEERING WHEEL</h1>
+	<!-- Шапка сайта(конец) -->
+	</div>
+	
+	<!-- Возврат на главную(стрелка) -->
+	<a href="#" class="arrowUp">
+		<i id="up"></i>
+		<img src="img/up-arrow_icon.svg">
+	</a>
+	
+	<!-- Слайдер(начало) -->
+	<div id="all" class="all">
+		<input checked type="radio" name="respond" id="desktop">
+			<article id="slider">
+					<input checked type="radio" name="slider" id="switch1">
+					<input type="radio" name="slider" id="switch2">
+					<input type="radio" name="slider" id="switch3">
+					<input type="radio" name="slider" id="switch4">
+					<input type="radio" name="slider" id="switch5">
+				<div id="slides">
+					<div id="overflow"> <!-- Отвечает за переключение изображений -->
+						<div class="image">
+							<article><img src="img/ferrari.jpg"></article>
+							<article><img src="img/audi-r8.jpg"/></article>
+							<article><img src="img/ford-mustang-mach-e-gt-5k-bq.jpg"></article>
+							<article><img src="img/bugatti-chiron-super-sport.jpg"></article>
+							<article><img src="img/dom.jpg"></article>
+						</div>
+					</div>
+				</div>
+				<div id="controls"> <!-- Кнопки переключения -->
+					<label for="switch1"></label>
+					<label for="switch2"></label>
+					<label for="switch3"></label>
+					<label for="switch4"></label>
+					<label for="switch5"></label>
+				</div>
+				<div id="active"> <!-- Активная страница слайда -->
+					<label for="switch1"></label>
+					<label for="switch2"></label>
+					<label for="switch3"></label>
+					<label for="switch4"></label>
+					<label for="switch5"></label>
+				</div>
+			</article>
+	</div>
+	<!-- Блоки инормации(начало) -->
+	<div id="inf" class="info"> 
+		<div class="selection-features">
+			<h2 class="text-info">Особенности выбора авто</h2>
+			<div class="sub-selection-features">
+				<section class="text-info-in-info">
+					<p class="text-info-p">В первую очередь вам следует обратить внимание на:</p>
+					<ul class="text-info-ul">
+						<br>
+						<li class="text-info-ul">Цену</li><br>
+						<li class="text-info-ul">Безопасность</li><br>
+						<li class="text-info-ul">Комфорт</li><br>
+						<li class="text-info-ul">Вместительность</li><br>
+						<li class="text-info-ul">Дизайн</li>
+					</ul>
+				</section>
+				<img src="img/pilot_salon.jpg" width="900px" height="550px">
+			</div>
+		</div>
+	
+		<div class="useful-information">
+			<h2 class="text-info">Полезная информация</h2>
+			<div class="sub-useful-information">
+				<img src="img/trip.jpg" width="900px" height="550px">
+				<p class="text-info-in">Автомобильные путешествия на дальние расстояния – отличный способ отдохнуть и получить новые впечатления. К сожалению, непредвиденные поломки вдали от дома могут серьезно осложнить путешествие и ударить по карману. Поэтому на подготовку средства передвижения к дальней поездке стоит уделить время, силы и средства. Что же необходимо сделать для подготовки «железного коня» к дороге?</p>
+			</div>
+		</div>
+	</div>
+		
+	<!-- Блок с брендами -->
+	<div id="brand">
+		<div class="brand-l-r">
+			<img src="img/tesla.png" height="200" width="300">
+		</div>
+		<div id="brand-center">
+			<img src="img/brand_porsche.jpg" height="250" width="450">
+		</div>
+		<div class="brand-l-r">
+			<img src="img/brand_kia.jpg.opdownload" height="200" width="300">
+		</div>
+	</div>
+
+	<!-- Поиск -->
+	<div class="search-box">
+		<input type="text" class="search-txt" placeholder="Поиск">
+		<a href="#" class="search-btn"><i class="fa fa-search" aria-hidden="true"></i></a>
+	</div>
+	<!-- Фильтр(начало) -->
+	<div class="container"> 
+  		<input type="radio" id="sedan" name="color" />
+  		<label id="sedan1" class="filter2" for="sedan">Sedan</label>
+  		<input type="radio" id="crossover" name="color"/>
+  		<label id="crossover1" class="filter2"  for="crossover">Crossover</label>
+  		<input type="radio" id="muscle" name="color"/>
+  		<label id="muscle1" class="filter2"  for="muscle">Muscle</label>
+  		<input type="radio" id="reset" name="color"/>
+  		<label class="filter2"  for="reset">All</label>
+
+  		<div class="tile sedan">
+  			<div class="img-in-filter">
+  				<img class="img-in-filter" src="img/sedans/sedan_merc.jfif">
+  				
+  				<p class="model-of-car">Mercedes-Benz S-Класс AMG 63</p>
+  				<p class="price-of-car">5 792 000 ₽</p>
+  				<input class="submit-in-filter" type="submit" value="Купить">
+  			</div>	
+  		</div>
+  		<div class="tile crossover">
+  			<div class="img-in-filter">
+  				<img class="img-in-filter" src="img/crossovers/crossover_kia.jfif">
+  				<p class="model-of-car">Kia Sorento II</p>
+  				<p class="price-of-car">998 000 ₽</p>
+  				<input class="submit-in-filter" type="submit" value="Купить">
+  			</div>
+  		</div>
+  		<div class="tile sedan">
+			<div class="img-in-filter">
+  				<img class="img-in-filter" src="img/sedans/sedan_porshe.jfif">
+  				<p class="model-of-car">Porsche Taycan Turbo S I</p>
+  				<p class="price-of-car">13 990 000 ₽</p>
+  				<input class="submit-in-filter" type="submit" value="Купить">
+  			</div>
+  		</div>
+  		<div class="tile muscle">
+  			<div class="img-in-filter">
+  				<img class="img-in-filter" src="img/muscles/muscle_chevrolet.jfif">
+  				<p class="model-of-car">Chevrolet Camaro VI</p>
+  				<p class="price-of-car">2 470 000 ₽</p>
+  				<input class="submit-in-filter" type="submit" value="Купить">
+  			</div>
+  		</div>
+  		<div class="tile sedan">
+  			<div class="img-in-filter">
+  				<img class="img-in-filter" src="img/sedans/sedan_bmw.jfif">
+  				<p class="model-of-car">BMW 5 серии 520d xDrive VII</p>
+  				<p class="price-of-car">2 867 000 ₽</p>
+  				<input class="submit-in-filter" type="submit" value="Купить">
+  			</div>
+  		</div>
+  		<div class="tile crossover">
+  			<div class="img-in-filter">
+  				<img class="img-in-filter" src="img/crossovers/crossover_volvo.jfif">
+  				<p class="model-of-car">Volvo XC40 I</p>
+  				<p class="price-of-car">2 772 000 ₽</p>
+  				<input class="submit-in-filter" type="submit" value="Купить">
+  			</div>
+  		</div>
+  		<div class="tile crossover">
+  			<div class="img-in-filter">
+  				<img class="img-in-filter" src="img/crossovers/crossover_mitsubishi.jfif">
+  				<p class="model-of-car">Mitsubishi ASX I</p>
+  				<p class="price-of-car">754 900 ₽</p>
+  				<input class="submit-in-filter" type="submit" value="Купить">
+  			</div>
+  		</div>
+  		<div class="tile muscle">
+  			<div class="img-in-filter">
+  				<img class="img-in-filter" src="img/muscles/muscle_ford_mustang.jfif">
+  				<p class="model-of-car">Ford Mustang VI</p>
+  				<p class="price-of-car">2 100 000 ₽</p>
+  				<input class="submit-in-filter" type="submit" value="Купить">
+  			</div>
+  		</div>
+  		<div class="tile sedan">
+  			<div class="img-in-filter">
+  				<img class="img-in-filter" src="img/sedans/sedan_audijfif.jfif">
+  				<p class="model-of-car">Audi A8 55 TFSI IV (D5)</p>
+  				<p class="price-of-car">5 629 000 ₽</p>
+  				<input class="submit-in-filter" type="submit" value="Купить">
+  			</div>
+  		</div>
+  		<div class="tile muscle">
+  			<div class="img-in-filter">
+  				<img class="img-in-filter" src="img/muscles/muscle_dodge.jfif">
+  				<p class="model-of-car">Dodge Challenger III</p>
+  				<p class="price-of-car">2 800 000 ₽</p>
+  				<input class="submit-in-filter" type="submit" value="Купить">
+  			</div>
+  		</div>
+  		<div class="tile crossover">
+  			<div class="img-in-filter">
+  				<img class="img-in-filter" src="img/crossovers/crossover_hyundai.jfif">
+  				<p class="model-of-car">Hyundai Tucson III</p>
+  				<p class="price-of-car">2 059 000 ₽
+</p>
+  				<input class="submit-in-filter" type="submit" value="Купить">
+  			</div>
+  		</div>
+  		<div class="tile muscle">
+  			<div class="img-in-filter">
+  				<img class="img-in-filter" src="img/muscles/muscle_olds.webp">
+  				<p class="model-of-car">Oldsmobile 442</p>
+  				<p class="price-of-car">Нет в наличии</p>
+  				<input class="submit-in-filter" type="submit" value="Подробнее">
+  			</div>
+  		</div>
+  		<div class="tile sedan">
+  			<div class="img-in-filter">
+  				<img class="img-in-filter" src="img/sedans/sedan_volvo.jfif">
+  				<p class="model-of-car">Volvo S60 II</p>
+  				<p class="price-of-car">835 000 ₽</p>
+  				<input class="submit-in-filter" type="submit" value="Купить">
+  			</div>
+  		</div>
+  		<div class="tile sedan">
+  			<div class="img-in-filter">
+  				<img class="img-in-filter" src="img/sedans/sedan_passat.jfif">
+  				<p class="model-of-car">Volkswagen Passat CC I Рестайлинг</p>
+  				<p class="price-of-car">1 297 577 ₽</p>
+  				<input class="submit-in-filter" type="submit" value="Купить">
+  			</div>
+  		</div>
+  		<div class="tile muscle">
+  			<div class="img-in-filter">
+  				<img class="img-in-filter" src="img/muscles/mascle_pontiac.webp">
+  				<p class="model-of-car">Pontiac Firebird Trans Am</p>
+  				<p class="price-of-car">Нет в наличии</p>
+  				<input class="submit-in-filter" type="submit" value="Подробнее">
+  			</div>
+		</div>
+  		<div class="tile crossover">
+  			<div class="img-in-filter">
+  				<img class="img-in-filter" src="img/crossovers/crossover_exeed.jfif">
+  				<p class="model-of-car">EXEED TXL</p>
+  				<p class="price-of-car">2 349 900 ₽</p>
+  				<input class="submit-in-filter" type="submit" value="Купить">
+  			</div>
+  		</div>
+  	<!-- Фильтр(конец) -->
+	</div>
+	<!-- Пустой блок -->
+	<div id="h-c" class="empty">
+		
+	</div>
+</body>
+<footer>
+	<!-- Подвал сайта(начало) -->
+	<div class="footer-box">
+		<div class="category">
+			<p>Категория</p>
+			<div class="text-category">
+				<a href="#sedan1">Sedan</a>
+				<p></p>
+				<a href="#crossover1">Crossover</a>
+				<p></p>
+				<a href="#muscle1">Muscle</a>
+				
+			</div>
+		</div>
+		<div class="service">
+			<p class="font-size">Сервис</p>
+			<div class="text-service">
+				<a href="#inf">Общая информация</a>
+			</div>
+		</div>
+		<div class="about-company">
+			<p>О STEERING<br>
+			___WHEEL</p>
+			<div class="text-about-company">
+				<a href="company.html">О компании</a>
+			</div>
+		</div>
+		<div class="info-center">
+			<p>Информационный центр</p>
+			<div class="text-info-center">
+				<p>Email:<a href="mailto:stwheel@mail.ru">stwheel@mail.ru</a></p>
+				<a id="submit2" href="kchau.html">8-800-222-555</a>
+			</div>
+		</div>
+	<!-- Подвал сайта(конец) -->
+	</div>
+</footer>
+</html>

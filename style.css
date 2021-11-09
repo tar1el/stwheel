@@ -1,0 +1,556 @@
+/* Сайт */
+body {
+	margin: 0;
+	padding: 0;
+	min-width: 960px;
+	background-color: #191819;
+	color: #cdcbcc;
+	
+}
+/* Шапка сайта и его подклассы (О НАС)*/
+.header-company {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
+	min-width: 100%;
+	min-height: auto;
+	background-color: rgba(20,19,20,0.8);
+	margin-right: auto;
+	margin-left: auto;
+
+}
+/* Название сайта (О НАС)*/
+.header-company h1 {
+	text-align: center;
+	margin-top: auto;
+	margin-bottom: auto;
+	padding-right: 5%;
+}
+
+/* Шапка сайта и его подклассы (ЗАКАЗАТЬ)*/
+.header-order {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
+	min-width: 100%;
+	min-height: auto;
+	
+	position: fixed;
+	z-index: 6;
+	background-color: rgba(20,19,20,0.8);
+	margin-right: auto;
+	margin-left: auto;
+
+}
+/* Название сайта (ЗАКАЗАТЬ)*/
+.header-order h1 {
+	text-align: center;
+	margin-top: auto;
+	margin-bottom: auto;
+	padding-right: 5%;
+}
+
+/* Шапка сайта и его подклассы (ПОМОЩЬ КОНСУЛЬТАНТА)*/
+.header-help {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
+	min-width: 100%;
+	min-height: auto;
+	
+	position: fixed;
+	z-index: 6;
+	background-color: rgba(20,19,20,0.8);
+	margin-right: auto;
+	margin-left: auto;
+
+}
+/* Название сайта (ПОМОЩЬ КОНСУЛЬТАНТА)*/
+.header-help h1 {
+	text-align: center;
+	margin-top: auto;
+	margin-bottom: auto;
+	padding-right: 5%;
+}
+
+/* Шапка сайта и его подклассы */
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
+	min-width: 100%;
+	min-height: auto;
+	
+	position: fixed;
+	z-index: 6;
+	background-color: rgba(20,19,20,0.8);
+	margin-right: auto;
+	margin-left: auto;
+
+}
+/* Название сайта */
+.header h1 {
+	text-align: center;
+	margin-top: auto;
+	margin-bottom: auto;
+	padding-right: 5%;
+}
+
+h1 {
+	
+	font-size: 60px;
+	font-family: 'Playfair Display SC', serif;
+	margin-top: 0;
+	color: rgba(255,34,60,0.6);
+}
+/* Пункты в сайте */
+h2 {
+	color: rgba(255,34,60,0.9);
+	font-size: 32px;
+	font-family: 'Playfair Display SC', serif;
+}
+
+/* Логотип */
+.logo {
+	margin-left: 5%;
+	text-align: center;
+	margin-top: auto;
+	margin-bottom: auto;
+	
+}
+/*Меню в шапке*/
+#menu {
+	
+	text-align: center;
+	margin-top: 2%;
+	margin-bottom: 1%;
+	margin-left: -6%;
+	
+}
+#main {
+	width: 130px;
+	height: 30px;
+	
+	cursor: pointer;
+	color: #cdcbcc;
+	background-color: rgba(124,118,124,0.3);
+	text-decoration: none;
+	font-size: 16px;
+	padding-right: 22px;
+	padding-left: 22px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+#main:hover {
+	background-color: rgba(255,34,60,0.9);
+}
+#about-us {
+	width: 130px;
+	height: 30px;
+	
+	cursor: pointer;
+	color: #cdcbcc;
+	background-color: rgba(124,118,124,0.3);
+	text-decoration: none;
+	font-size: 16px;
+	padding-right: 22px;
+	padding-left: 22px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+#about-us:hover {
+	background-color: rgba(255,34,60,0.9);
+}
+
+#help {
+	width: 130px;
+	height: 30px;
+	
+	cursor: pointer;
+	color: #cdcbcc;
+	background-color: rgba(124,118,124,0.3);
+	text-decoration: none;
+	font-size: 16px;
+	padding-right: 22px;
+	padding-left: 22px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+#help:hover {
+	background-color: rgba(255,34,60,0.9);
+}
+
+
+#order {
+	width: 130px;
+	height: 30px;
+	
+	cursor: pointer;
+	color: #cdcbcc;
+	background-color: rgba(124,118,124,0.3);
+	text-decoration: none;
+	font-size: 16px;
+	padding-right: 22px;
+	padding-left: 22px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+#order:hover {
+	background-color: rgba(255,34,60,0.9);
+}
+
+/* Особенности, полезная информация, краткая информация о копмпании */
+
+.info {
+	display: flex;
+	flex-direction: column;
+	width: 1650px;
+	height: 1400px;
+	margin-left: auto;
+	margin-right: auto;
+	justify-content:  space-between;
+	margin-top: 9%;
+	position: relative;
+}
+
+.text-info-in-info {
+	margin-bottom: 1%;
+	margin-left: 4%;
+	margin-right: auto;
+	font-style: oblique;
+}
+.text-info-p {
+	font-size: 28px;
+}
+.text-info-ul {
+	font-size: 26px;
+}
+.selection-features {
+	width: 1660px;
+	background-color: rgba(39,37,39,0.1);
+}
+
+.sub-selection-features {
+	display: flex;
+	flex-direction: row;
+}
+
+.sub-selection-features img {
+	margin-right: 1%;
+	margin-bottom: 1%;
+}
+
+.useful-information {
+	width: 1660px;
+	background-color: rgba(39,37,39,0.1);
+}
+.sub-useful-information {
+	display: flex;
+	flex-direction: row;
+}
+
+.sub-useful-information img {
+	margin-left: 1%;
+	margin-bottom: 1%;
+}
+.short-info {
+	width: 1660px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: rgba(39,37,39,0.1);
+}
+
+.sub-short-info {
+	display: flex;
+	flex-direction: row;
+
+}
+
+.sub-short-info img{
+	margin-right: 1%;
+	margin-bottom: 1%;
+}
+.text-info {
+	text-align: center;
+	border-bottom: 1px solid rgba(235,34,60,0.3);
+	height: 40px;
+	
+	align-content: center;
+}
+
+.text-info-in {
+	font-size: 28px;
+	line-height: 40px;
+	font-style: oblique;
+	text-align: justify;
+	margin: 15px;
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* Пустой блок */
+.empty {
+	width: 1650px;
+	height: 20px;
+	margin-right: auto;
+	margin-left: auto;
+	display: flex;
+	
+}
+/* Блок с брендами */
+
+#brand {
+	display: flex;
+	flex-direction: row;
+	width: 70%;
+	height: auto;
+	justify-content: space-around;
+	
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 5%;
+}
+
+.brand-l-r {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+/*Блок с консультантом и регистрацией клиента*/
+
+.consultant {
+	display: flex;
+	flex-direction: column;
+	width: 1650px;
+	height: 750px;
+	margin-left: auto;
+	margin-right: auto;
+	justify-content:  space-between;
+	margin-top: 2%;
+	position: relative;
+	background-color: rgba(39,37,39,0.1);
+	margin-bottom: 5%;
+}
+/* Элементы в списке */
+li {
+	font-size: 20px;
+}
+
+.sub-consultant-block {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+
+}
+
+.consultant-text-img {
+	margin: 1%;
+}
+
+
+.text-consultant {
+	text-align: center;
+	
+	font-size: 40px;
+	
+	
+}
+
+.text-info-in2 {
+	font-size: 30px;
+	margin-top: 0;
+	text-align: justify;
+	margin-right: 4%;
+	margin-left: 4%;
+	font-style: oblique;
+}
+
+.sub-text-consultant {
+	font-size: 20px;
+	text-align: center;
+}
+/* Блок регистрации */
+
+#registration {
+	width: 1000px;
+	height: 480px;
+	background-color: rgba(39,37,39,0.2);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-right: auto;
+	margin-left: auto;
+	border-radius: 5%;
+	padding-top: 1%;
+	
+}
+
+.order-info {
+	width: 900px;
+	height: 30px;
+	margin-bottom: 4%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.order-info2 {
+	width: 900px;
+	height: 30px;
+	margin-bottom: 4%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+#fullname {
+	width: 900px;
+	height: 30px;
+	background-color: rgba(39,37,39,0.5);
+	color: #cdcbcc;
+}
+
+#phone {
+	width: 900px;
+	height: 30px;
+	background-color: rgba(39,37,39,0.5);
+	color: #cdcbcc;
+}
+
+#extension {
+	width: 900px;
+	height: 30px;
+	background-color: rgba(39,37,39,0.5);
+}
+
+#email {
+	width: 900px;
+	height: 30px;
+	background-color: rgba(39,37,39,0.5);
+	color: #cdcbcc;
+}
+
+#ch-box {
+	width: 900px;
+	height: 30px;
+	background-color: rgba(39,37,39,0.5);
+}
+
+#submit {
+	width: 900px;
+	height: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgba(235,34,60,0.3);
+	color: #cdcbcc;
+}
+
+#submit:hover {
+	background-color: rgba(235,34,60,0.6);
+	color: #cdcbcc;
+}
+/* Подвал сайта */
+
+.footer-box {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin-top: 5%;
+	padding-top: 2%;
+	
+	min-width: 100%;
+	height: 200px;
+	color: #cdcbcc;
+	background-color: rgba(20,19,20,0.9);
+	margin-right: auto;
+	margin-left: auto;
+}
+
+a {
+	text-decoration: none;
+	color: #cdcbcc;
+}
+.submit2 {
+	
+}
+
+.category {
+	
+	width: 120px;
+	height: auto;
+}
+
+.text-category {
+}
+
+.service {
+	
+	width: 150px;
+	height: auto;
+}
+
+.text-service {	
+}
+
+.about-company {
+	
+	width: 120px;
+	height: auto;
+}
+
+.text-about-company {
+}
+
+.info-center {
+	
+	width: 150px;
+	height: auto;
+}
+
+.text-info-center {
+}
+
+#submit2 {
+	width: 130px;
+	height: 30px;
+	cursor: pointer;
+	color: #cdcbcc;
+	font-style: italic;
+	background-color: rgba(124,118,124,0.3);
+	text-decoration: none;
+	font-size: 16px;
+	padding-right: 22px;
+	padding-left: 22px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	border-radius: 45% 45% 45% 45%;
+}
+
+#submit2:hover {
+	background-color: rgba(255,34,60,0.9);
+	
+}
+
+#kchau {
+	display: flex;
+	justify-content: center;
+}
